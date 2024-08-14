@@ -1,15 +1,21 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { CommonModule } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './components/header/header.component';
+import { CompaniesComponent } from './pages/companies/companies.component';
+import { FormsCompaniesComponent } from './pages/forms-companies/forms-companies.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HeaderComponent,
+    CompaniesComponent,
+    FormsCompaniesComponent
   ],
   imports: [
-    BrowserModule,
+    CommonModule,
     AppRoutingModule
   ],
   providers: [],
